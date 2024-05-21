@@ -1,0 +1,15 @@
+{
+    "name": "test-lidar",
+    "version": "1.0.0",
+    "description": "Cordova Plugin for lidar test",
+    "author": "dinitri",
+    "cordova": {
+      "id": "test-lidar",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "engines": {
+    }
+  }
+  
