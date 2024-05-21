@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="test-lidar" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>test-lidar</name>
+    <js-module name="test-lidar" src="www/test-lidar.js">
+        <clobbers target="cordova.plugins.test-lidar" />
+    </js-module>
+    <keywords>cordova, lidar</keywords>
+    <engines>
+        <engine name="cordova" version=">=5.0.0" />
+    </engines>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="Lidar">
+                <param name="ios-package" value="Lidar" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/Lidar.m" />
+    </platform>
+</plugin>
